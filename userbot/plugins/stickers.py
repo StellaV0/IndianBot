@@ -40,7 +40,7 @@ async def _(event):
         await event.edit("Reply to a photo to add to my personal sticker pack.")
         return
     reply_message = await event.get_reply_message()
-    sticker_emoji = "🔥"
+    sticker_emoji = "ðŸ”¥"
     input_str = event.pattern_match.group(1)
     if input_str:
         sticker_emoji = input_str
@@ -50,7 +50,7 @@ async def _(event):
         user.first_name = user.id
     pack = 1
     userid = event.from_id
-    #packname = f"IndiaBhai™keStickers"
+    #packname = f"IndiaBhaiâ„¢keStickers"
     #packshortname = f"IndianBot_{userid}_ns"  # format: Uni_Borg_userid
     if userid == 953414679:
         packname = f"IndianBhaikeStickers"
@@ -58,7 +58,7 @@ async def _(event):
     else:
         packname = f"{DEFAULTUSER}'s @ShicmuonOP 1.{pack}"
         packshortname = f"vol_1_with_{userid}"
-    await event.edit("`Look dat way,My Master like it!\nWell then, Lemme kang this stcker over for � ヽ༼ ಠ益ಠ ༽ﾉ`")
+    await event.edit("`Look dat way,My Master like it!\nWell then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ ãƒ½à¼¼ à² ç›Šà²  à¼½ï¾‰`")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Shicmuon_Pack.png"
@@ -88,7 +88,7 @@ async def _(event):
         now = datetime.datetime.now()
         dt = now + datetime.timedelta(minutes=1)
         if not await stickerset_exists(bot_conv, packshortname):
-            await event.edit("`Brewing a new pack! ヽ(´▽｀)ノ`")
+            await event.edit("`Brewing a new pack! ãƒ½(Â´â–½ï½€)ãƒŽ`")
             await silently_send_message(bot_conv, "/cancel")
             if is_a_s:
                 response = await silently_send_message(bot_conv, "/newanimated")
