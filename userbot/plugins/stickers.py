@@ -58,7 +58,7 @@ async def _(event):
     else:
         packname = f"{DEFAULTUSER}'s @ShicmuonOP 1.{pack}"
         packshortname = f"vol_1_with_{userid}"
-    await event.edit("`Look dat way,My Master like it!\nWell then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ ãƒ½à¼¼ à² ç›Šà²  à¼½ï¾‰`")
+    await event.edit("`Look dat way,My Master like it Well then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Shicmuon_Pack.png"
