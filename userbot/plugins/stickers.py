@@ -58,7 +58,7 @@ async def _(event):
     else:
         packname = f"{DEFAULTUSER}'s @ShicmuonOP 1.{pack}"
         packshortname = f"vol_1_with_{userid}"
-    await event.edit("Look dat way,My Master like it Well then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ")
+    await event.edit("Look dat way, My Master like it Well then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Shicmuon_Pack.png"
@@ -71,8 +71,8 @@ async def _(event):
             packname = f"IndiaBhaikeAnimeted"
             packshortname = "IndianBhai_ke_Animated"
         else:
-            packname = f"{DEFAULTUSER}'s IndianBot Animated Vol.{pack}"
-            packshortname = f"IndianBot_{userid}" # format: Uni_Borg_userid
+            packname = f"{DEFAULTUSER}'s @ShicmuonOP Animated.{pack}"
+            packshortname = f"Shicmuon Pack_{userid}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
@@ -88,7 +88,7 @@ async def _(event):
         now = datetime.datetime.now()
         dt = now + datetime.timedelta(minutes=1)
         if not await stickerset_exists(bot_conv, packshortname):
-            await event.edit("`Brewing a new pack! ãƒ½(Â´â–½ï½€)ãƒŽ`")
+            await event.edit("`Brewing a new pack! For らнɪㄈ௱ЦØЛ ofc")
             await silently_send_message(bot_conv, "/cancel")
             if is_a_s:
                 response = await silently_send_message(bot_conv, "/newanimated")
