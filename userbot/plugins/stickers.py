@@ -40,7 +40,7 @@ async def _(event):
         await event.edit("Reply to a photo to add to my personal sticker pack.")
         return
     reply_message = await event.get_reply_message()
-    sticker_emoji = "ðŸ”¥"
+    sticker_emoji = "👽"
     input_str = event.pattern_match.group(1)
     if input_str:
         sticker_emoji = input_str
@@ -58,7 +58,7 @@ async def _(event):
     else:
         packname = f"{DEFAULTUSER}'s @ShicmuonOP 1.{pack}"
         packshortname = f"vol_1_with_{userid}"
-    await event.edit("`Look dat way,My Master like it Well then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ")
+    await event.edit("Look dat way,My Master like it Well then, Lemme kang this stcker over for らнɪㄈ௱ЦØЛ")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Shicmuon_Pack.png"
