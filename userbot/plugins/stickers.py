@@ -72,7 +72,7 @@ async def _(event):
             packshortname = "IndianBhai_ke_Animated"
         else:
             packname = f"{DEFAULTUSER}'s @ShicmuonOP Animated.{pack}"
-            packshortname = f"Shicmuon Pack_{userid}" # format: Uni_Borg_userid
+            packshortname = f"ShicmuonPack_{userid}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
@@ -88,7 +88,7 @@ async def _(event):
         now = datetime.datetime.now()
         dt = now + datetime.timedelta(minutes=1)
         if not await stickerset_exists(bot_conv, packshortname):
-            await event.edit("`Brewing a new pack! For らнɪㄈ௱ЦØЛ ofc")
+            await event.edit("Brewing a new pack! For らнɪㄈ௱ЦØЛ ofc")
             await silently_send_message(bot_conv, "/cancel")
             if is_a_s:
                 response = await silently_send_message(bot_conv, "/newanimated")
